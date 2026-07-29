@@ -2,12 +2,9 @@
 
 A simple full-stack task management app (projects, tasks, members) built with Node.js, Express, PostgreSQL, and React.
 
-## Live Demo
+## Live Demo : [https://electropi-task-manager.vercel.app]
 
-- Frontend: [add link here once deployed]
-- Backend API: [add link here once deployed]
-
-> Not deployed yet? Delete this section before submitting.
+Postman collection: [link](https://www.postman.com/mahmoudtamer0-8816438/workspace/default-workspace/collection/50295562-84da4f96-bf78-4441-91c1-fb7473010238?action=share&source=copy-link&creator=50295562)
 
 ## Tech Stack
 
@@ -77,8 +74,8 @@ Frontend runs on `http://localhost:5173`.
 
 | Role   | Email                  | Password       |
 |--------|-------------------------|-----------------|
-| Admin  | admin@example.com       | Admin123!       |
-| Member | member@example.com      | Member123!      |
+| Admin  | admin@example.com       | admin123       |
+| Member | member@example.com      | member123      |
 
 ## Running Tests
 
@@ -106,4 +103,5 @@ Or import `postman_collection.json` from this repo directly into Postman.
 - Portfolio: [mahmoud-tamer-portfolio.vercel.app](https://mahmoud-tamer-portfolio.vercel.app)
 - GitHub: [github.com/mahmoudtamer0](https://github.com/mahmoudtamer0)
 - LinkedIn: [linkedin.com/in/mahmoudtamer0](https://www.linkedin.com/in/mahmoudtamer0/)
-- Email: mamoidtamer300@gmail.com
+- Email: mahmoud.tamer.developer@gmail.com
+- phone/whatsapp: 01123511914
