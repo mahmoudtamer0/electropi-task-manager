@@ -73,8 +73,8 @@ Frontend runs on `http://localhost:5173`.
 
 | Role   | Email                  | Password       |
 |--------|-------------------------|-----------------|
-| Admin  | admin@example.com       | Admin123!       |
-| Member | member@example.com      | Member123!      |
+| Admin  | admin@example.com       | admin123       |
+| Member | member@example.com      | member123      |
 
 ## Running Tests
 
