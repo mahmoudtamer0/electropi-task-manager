@@ -1,4 +1,3 @@
-// import { OAuth2Client } from "google-auth-library";
 import pool from "../../config/db";
 import ApiError from "../../utils/errors/ApiError";
 import { checkPassword } from "../../utils/checkPassword";

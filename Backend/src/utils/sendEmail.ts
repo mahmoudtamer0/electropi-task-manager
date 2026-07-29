@@ -27,7 +27,7 @@ export const sendEmail = async ({ email, message, text, subject }: SendEmailPara
         await apiInstance.sendTransacEmail({
             sender: {
                 email: "mamoidtamer300@gmail.com",
-                name: "Aleef Team"
+                name: "task manager",
             },
             to: [{ email: email }],
             subject: subject,

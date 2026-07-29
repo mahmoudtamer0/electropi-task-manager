@@ -20,6 +20,7 @@ export default function Sidebar({ projects, onAddProject }: SidebarProps) {
     return (
         <aside className={styles.sidebar}>
             <div className={styles.logo}>Taskapp</div>
+            <p className={styles.tagline}>ElectroPi Task Submission</p>
 
             <NavLink
                 to="/projects"
@@ -64,6 +65,15 @@ export default function Sidebar({ projects, onAddProject }: SidebarProps) {
                     Log out
                 </button>
             </div>
+
+            <a
+                href="https://www.linkedin.com/in/mahmoudtamer0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.credit}
+            >
+                Made by Mahmoud Tamer
+            </a>
         </aside>
     );
 }
