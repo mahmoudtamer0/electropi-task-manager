@@ -1,0 +1,149 @@
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.navItem {
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navItemActive {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.addButton {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.projectItem {
+    padding: 9px 12px;
+    border-radius: var(--radius-sm);
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.projectItemActive {
+    background: #fff;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.userBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+}
+
+.userName {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.userEmail {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.65);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logoutButton {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .projectList {
+        display: none;
+    }
+}

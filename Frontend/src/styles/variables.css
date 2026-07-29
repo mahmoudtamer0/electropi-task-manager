@@ -1,0 +1,52 @@
+:root {
+    --color-bg-start: #8B7FD6;
+    --color-bg-end: #6FBFC7;
+    --color-surface: #FFFFFF;
+    --color-surface-soft: #F6F5FB;
+    --color-ink: #211D33;
+    --color-ink-muted: #7B7791;
+    --color-border: #E7E4F2;
+
+    --color-accent: #7C5CD1;
+    --color-accent-soft: #EFEAFB;
+
+    --color-priority-high-bg: #FCE4E4;
+    --color-priority-high-text: #C6433F;
+    --color-priority-medium-bg: #FDECD2;
+    --color-priority-medium-text: #B87A16;
+    --color-priority-low-bg: #E7E1FB;
+    --color-priority-low-text: #7C5CD1;
+
+    --color-status-todo: #7C5CD1;
+    --color-status-progress: #E08E45;
+    --color-status-done: #3FAE68;
+
+    --font-family: -apple-system, "Segoe UI", "Inter", system-ui, sans-serif;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+
+    --shadow-card: 0 10px 30px rgba(33, 29, 51, 0.08);
+
+    --sidebar-width: 240px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--color-ink);
+    background: linear-gradient(135deg, var(--color-bg-start), var(--color-bg-end));
+    min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}

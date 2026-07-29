@@ -1,0 +1,141 @@
+.searchBox {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: var(--color-accent);
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-card);
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdownItem:hover {
+    background: var(--color-surface-soft);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 4px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-accent-soft);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.userText {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+.userName {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.userEmail {
+    font-size: 12px;
+    color: var(--color-ink-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.addLabel {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.roleBadge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-ink-muted);
+    background: var(--color-surface-soft);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.roleAdmin {
+    color: var(--color-accent);
+    background: var(--color-accent-soft);
+}
+
+.removeButton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--color-ink-muted);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.removeButton:hover {
+    color: var(--color-priority-high-text);
+}
+
+.empty {
+    font-size: 13px;
+    color: var(--color-ink-muted);
+    text-align: center;
+    padding: 12px 0;
+}
