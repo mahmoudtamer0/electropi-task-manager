@@ -4,6 +4,7 @@ A simple full-stack task management app (projects, tasks, members) built with No
 
 ## Live Demo : [https://electropi-task-manager.vercel.app]
 
+Postman collection: [link](https://www.postman.com/mahmoudtamer0-8816438/workspace/default-workspace/collection/50295562-84da4f96-bf78-4441-91c1-fb7473010238?action=share&source=copy-link&creator=50295562)
 
 ## Tech Stack
 
