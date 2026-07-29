@@ -33,11 +33,12 @@ const authLimiter = rateLimit({
     message: { status: "fail", message: "Too many login attempts, try again later" }
 });
 
-app.use(apiLimiter);
+app.use('/api/v1', apiLimiter);
+
 app.use('/api/v1/auth/login', authLimiter);
-app.use('/api/v1/auth', apiLimiter, authRouter);
-app.use('/api/v1/projects', apiLimiter, projectRouter);
-app.use('/api/v1/tasks', apiLimiter, myTasksRouter);
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/projects', projectRouter);
+app.use('/api/v1/tasks', myTasksRouter);
 
 app.use(globalErrorHandler);
 
