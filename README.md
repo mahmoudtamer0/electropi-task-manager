@@ -102,4 +102,5 @@ Or import `postman_collection.json` from this repo directly into Postman.
 - Portfolio: [mahmoud-tamer-portfolio.vercel.app](https://mahmoud-tamer-portfolio.vercel.app)
 - GitHub: [github.com/mahmoudtamer0](https://github.com/mahmoudtamer0)
 - LinkedIn: [linkedin.com/in/mahmoudtamer0](https://www.linkedin.com/in/mahmoudtamer0/)
-- Email: mamoidtamer300@gmail.com
+- Email: mahmoud.tamer.developer@gmail.com
+- phone/whatsapp: 01123511914
