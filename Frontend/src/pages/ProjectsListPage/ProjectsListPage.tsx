@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { useOutletContext } from "react-router-dom";
 import type { Project, Pagination } from "../../types";
 import { listProjectsRequest } from "../../api/projects.api";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import styles from "./ProjectsListPage.module.css";
 
 export default function ProjectsListPage() {
+    const { version } = useOutletContext<{ version: number }>();
     const [projects, setProjects] = useState<Project[]>([]);
     const [pagination, setPagination] = useState<Pagination | null>(null);
     const [search, setSearch] = useState("");
@@ -14,16 +16,14 @@ export default function ProjectsListPage() {
     useEffect(() => {
         const timeout = setTimeout(async () => {
             setIsLoading(true);
-            const res = await listProjectsRequest({ search, page, limit: 8 });
+            const res = await listProjectsRequest({ search, page, limit: 9 });
             setProjects(res.projects);
             setPagination(res.pagination);
             setIsLoading(false);
         }, 300);
 
         return () => clearTimeout(timeout);
-    }, [search, page]);
-
-    console.log(projects);
+    }, [search, page, version]);
 
     return (
         <div>

@@ -14,6 +14,7 @@ export default function AppLayout() {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [version, setVersion] = useState(0);
 
     const loadProjects = async () => {
         const res = await listProjectsRequest({ limit: 50 });
@@ -30,6 +31,7 @@ export default function AppLayout() {
         try {
             await createProjectRequest({ name, description });
             showToast("success", "Project created");
+            setVersion((v) => v + 1);
             setName("");
             setDescription("");
             setIsModalOpen(false);
@@ -44,7 +46,7 @@ export default function AppLayout() {
             <Sidebar projects={projects} onAddProject={() => setIsModalOpen(true)} />
 
             <main className={styles.main}>
-                <Outlet context={{ projects, refreshProjects: loadProjects }} />
+                <Outlet context={{ projects, refreshProjects: loadProjects, version }} />
             </main>
 
             {isModalOpen && (
