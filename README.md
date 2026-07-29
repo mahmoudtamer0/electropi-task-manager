@@ -2,10 +2,8 @@
 
 A simple full-stack task management app (projects, tasks, members) built with Node.js, Express, PostgreSQL, and React.
 
-## Live Demo : [https://electropi-task-manager.vercel.app/projects]
+## Live Demo : [https://electropi-task-manager.vercel.app]
 
-
-> Not deployed yet? Delete this section before submitting.
 
 ## Tech Stack
 
