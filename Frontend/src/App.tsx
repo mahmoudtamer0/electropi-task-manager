@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { ToastProvider } from "./context/ToastContext/ToastContext";
 import { NotificationsProvider } from "./context/NotificationsProvider";
@@ -16,7 +16,7 @@ export default function App() {
     <ToastProvider>
       <AuthProvider>
         <NotificationsProvider>
-          <BrowserRouter>
+          <Router>
             <Routes>
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
@@ -31,7 +31,7 @@ export default function App() {
 
               <Route path="*" element={<Navigate to="/login" replace />} />
             </Routes>
-          </BrowserRouter>
+          </Router>
         </NotificationsProvider>
       </AuthProvider>
     </ToastProvider>
